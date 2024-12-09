@@ -140,3 +140,18 @@ body{
    margin-bottom: 2em;
   
 }
+
+.portfolio-heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 2px 0px 2px 103px;
+   margin-top: 80px;
+   margin-left: 105px;
+}
+
+.portfolio-heading h2 {
+   font-size: 2em;
+   color: white;
+}
