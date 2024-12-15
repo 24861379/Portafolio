@@ -227,13 +227,94 @@ body{
 }
 
 .contenedor-contacto{
-    /*no se que hace con esto*/
+   display: flex;
+   justify-content: center;
+    
+}
+
+.contact-form h4{
+   color: #fff;
+   font-size: 20px;
 }
 
 .form-control{
    display: flex;
    flex-direction: column;
-   width: 30vw;
+   width: 600px;
+   text-align: center;
    margin-top: 2em;
 }
- 
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   /* Espacio entre los inputs */
+}
+
+.input-group .item {
+   flex: 1;
+   /* Ambos campos ocupan el mismo espacio */
+}
+
+form .item{
+   width: 100%;
+   padding: 18px;
+   background: transparent;
+   border: 2px solid #0ef;
+   outline: none;
+   border-radius: 6px;
+   font-size: 16px;
+   color: #ededed;
+   margin: 12px 0;
+}
+
+.form-control .item::placeholder{
+   color: rgba(255, 255, 255, .3);
+}
+
+.form-contro .input-group .error-txt{
+   font-size: 14.5px;
+   color: #d93025;
+   text-align: left;
+   margin-top: 4px;
+   margin-bottom: 0;
+   /*margin: -5px 0 10px ;*/
+   /* display: none; */ 
+   position: static;
+      /* Cambia de posición absoluta a relativa */
+   /*top: 0;*/
+}
+
+form .textarea .item{
+   resize: none;
+   height: 180px;
+}
+
+form .textarea .error-txt{
+   margin-top: -10px;
+}
+
+ form .btn-Enviar{
+   display: block;
+   margin: 20px auto 0 auto;
+   text-align: center;
+   width: 200px;
+   padding: 12px 32px;
+   background: #0ef;
+   outline: none;
+   border: none;
+   border-radius: 6px;
+   box-shadow: 0 0 10px #0ef;
+   font-size: 16px;
+   color: #333;
+   letter-spacing: 1px;
+   font-weight: 600;
+   cursor: pointer;
+   margin-top: 20px;
+   transition: .4s;
+} 
+
+form .btn-Enviar:hover{
+   box-shadow: none;
+}

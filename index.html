@@ -123,9 +123,21 @@
                 <h4>Envíame un mensaje.</h4>
 
                 <form class="form-control">
-                    <input type="text" placeholder="Nombre:">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nombre" id="nombre" autocomplete="off" class="item">
+                        <div class="error-txt">Este espacio no puede quedar vacío.</div>
+
+                        <input type="email" placeholder="Correo" id="email" autocomplete="off" class="item">
+                         <div class="error-txt">Este espacio no puede quedar vacío.</div> 
+                    </div>
+                    
+                    <input type="text" placeholder="Asunto" id="asunto" autocomplete="off" class="item">
+                    <div class="error-txt">Este espacio no puede quedar vacío.</div>
+                    
+                    <div class="textarea">
+                        <textarea placeholder="Escribe tu mensaje aquí" id="mensaje" autocomplete="off" class="item"></textarea>
+                        <div class="error-txt">Este espacio no puede quedar vacío.</div>
+                    </div>
                     <button type="submit" class="btn-Enviar">Enviar mensaje</button>
                 </form>
             </div>
