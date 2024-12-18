@@ -16,6 +16,11 @@ body{
     background: #26425a;
 }
 
+section{
+   scroll-margin-top: 60px ;
+   height: 100vh;
+}
+
  .header{
     position: fixed;
     top: 0;
@@ -112,14 +117,15 @@ body{
    box-shadow: none;
  }
 
- .experiencia{
+/*Sección de sobre mi*/
+ .sobre_mi{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    width: 90vw;
    align-items: center;
  }
 
- .experiencia{
+ .sobre_mi{
    grid-column: 5/10;
    padding: 2px 105px;
    display: flex;
@@ -127,8 +133,12 @@ body{
    align-items: flex-start;   
  }
 
-.experiencia h2{
+.sobre_mi h2{
    font-size: 2em;
+   color: #fff;
+}
+
+.sobre_mi p {
    color: #fff;
 }
 
@@ -141,6 +151,63 @@ body{
   
 }
 
+/*Sección de habilidades*/
+.habilidades-heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 2px 0px 2px 103px;
+   margin-top: 80px;
+   margin-left: 105px;
+}
+
+.habilidades-heading h2 {
+   font-size: 2em;
+   color: white;
+}
+
+.habilidades-heading p {
+   color: white;
+}
+
+/*Sección de habilidades con iconos*/
+/* .icon-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   flex-wrap: wrap;
+   margin-top: 50px;
+} */
+ .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos salten a la siguiente fila */
+    justify-content: center;
+    /* Centra los íconos horizontalmente */
+    gap: 20px;
+    /* Espacio entre íconos */
+    margin-top: 50px;
+ }
+
+.icon-item{
+   flex: 0 1 20%;
+   margin: 10px;
+   text-align: center;
+}
+
+.icon-item img{
+   width: 80px;/* Tamaño del ícono */
+}
+
+.icon-item p {
+   margin-top: 10px;
+   font-size: 16px;
+   color: #fff;
+}
+
+/*Sección de portafolio*/
 .portfolio-heading {
    display: flex;
    flex-direction: column;
@@ -175,14 +242,14 @@ body{
    width: 100%;
    height: 150px;
    background-image: url(/img/HR.JPG);
-   background-size: cover;
+   background-size: 300px 160px;
 }
 
 .card_img-Cake-Byte {
    width: 100%;
    height: 150px;
    background-image: url(/img/Logo\ Cake_Byte.png);
-   background-size: cover;
+   background-size: 300px 190px;
 }
 
 .card_img-Store-Stock {
@@ -211,7 +278,9 @@ body{
    font-size: 1.5em;
 }
 
-.contact-headings {
+
+/*Sección de formulario de contacto*/
+/* .contact-headings {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
@@ -219,45 +288,44 @@ body{
    padding: 2px 0px 2px 103px;
    margin-top: 80px;
    margin-left: 105px;
-}
+} */
 
-.contact-headings h2 {
+/* .contact-headings h2 {
    font-size: 2em;
    color: white;
-}
+} */
 
-.contenedor-contacto{
+/* .contenedor-contacto{
    display: flex;
-   justify-content: center;
-    
-}
+   justify-content: center;  
+} */
 
-.contact-form h4{
+/* .contact-form h4{
    color: #fff;
    font-size: 20px;
-}
+} */
 
-.form-control{
+/* .form-control{
    display: flex;
    flex-direction: column;
    width: 600px;
    text-align: center;
    margin-top: 2em;
-}
+} */
 
-.input-group {
+/* .input-group {
    display: flex;
    flex-direction: column;
    gap: 12px;
-   /* Espacio entre los inputs */
-}
+    Espacio entre los inputs 
+} */
 
-.input-group .item {
+/* .input-group .item {
    flex: 1;
-   /* Ambos campos ocupan el mismo espacio */
-}
+   Ambos campos ocupan el mismo espacio 
+} */
 
-form .item{
+/* form .item{
    width: 100%;
    padding: 18px;
    background: transparent;
@@ -271,22 +339,23 @@ form .item{
 
 .form-control .item::placeholder{
    color: rgba(255, 255, 255, .3);
-}
+} */
 
-.form-contro .input-group .error-txt{
+/* .form-contro .input-group .error-txt{
    font-size: 14.5px;
    color: #d93025;
    text-align: left;
    margin-top: 4px;
-   margin-bottom: 0;
+   margin-bottom: 0; */
    /*margin: -5px 0 10px ;*/
    /* display: none; */ 
-   position: static;
+   /* position: static; */
       /* Cambia de posición absoluta a relativa */
    /*top: 0;*/
-}
+/* } */
 
-form .textarea .item{
+/* form .textarea .item{
+
    resize: none;
    height: 180px;
 }
@@ -318,3 +387,59 @@ form .textarea .error-txt{
 form .btn-Enviar:hover{
    box-shadow: none;
 }
+ */
+
+ footer{
+   width: 100%;
+   position: relative;
+   bottom: 0;
+   left: 0;
+   padding: 2rem ;
+   background-color: #2C576E;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+footer .inicio a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.inicio h5 {
+   text-align: center;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%; 
+ }
+
+ .contact-icons-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   /* margin-bottom: 1rem; */
+ }
+
+ .social-icons{
+   height: 50px;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   text-align: center;
+   border: none;
+   text-decoration: none;
+ }
+
+ footer .social-icons i {
+   font-size: 30px;/* Ajusta el tamaño a lo que necesites */
+   margin: 0;/* Espaciado entre los íconos */
+   color: #fff;/* Color de los íconos (puedes cambiarlo) */
+   transition: color 0.3s ease;/* Efecto de transición para el cambio de color */
+ }
