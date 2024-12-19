@@ -3,15 +3,18 @@ function desplazarSeccion(evento) {
     evento.preventDefault();
 
     const idDestino = evento.target.getAttribute('href').substring(1);
-    const seccionDestion = document.getElementById(idDestino);
+    const seccionDestino = document.getElementById(idDestino);
 
-    seccionDestion.scrollIntoView({
+    seccionDestino.scrollIntoView({
         behavior: 'smooth'   
     });
 }
 
 const enlaceNav = document.querySelectorAll('nav a');
 enlaceNav.forEach(enlace => {
-    enlace.addEventListener('click', desplazarSeccion)
-})
+    enlace.addEventListener('click', desplazarSeccion);
+});
+
+const enlaceFooter = document.querySelector('.inicio a');
+enlaceFooter.addEventListener('click', desplazarSeccion);
 
