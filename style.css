@@ -260,7 +260,7 @@ section{
 .card_img{
    width: 100%;
    height: 150px;
-   background-image: url(/img/HR.JPG);
+   background-image: url(img/HR.jpg);
    background-size: 300px 160px;
 }
 
@@ -275,7 +275,7 @@ section{
 .card_img-Store-Stock {
    width: 100%;
    height: 150px;
-   background-image: url(/img/StoreStock.JPG );/*PONER LA IMAGEN*/
+   background-image: url(/img/StoreStock.jpg );/*PONER LA IMAGEN*/
    background-size: 300px 190px;
 }
 
