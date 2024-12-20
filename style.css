@@ -1,109 +1,110 @@
 .lexend-deca-Font {
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+   font-family: "Lexend Deca", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lexend Deca', sans-serif;
-    background: #26425a;
+body {
+   font-family: 'Lexend Deca', sans-serif;
+   background: #26425a;
 }
 
-section{
-   scroll-margin-top: 60px ;
+section {
+   scroll-margin-top: 60px;
    height: 100vh;
 }
 
- .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
-    background: #2C576E;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 50px;
+   background: #2C576E;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   z-index: 100;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
- .navbar a{
-    position: relative;
-    font-size: 18px;
-    color: #d9b48f; 
-    /*color:#4a7c9c ;*/
-    font-weight: 400;
-    text-decoration: none;
-    margin-left: 20px;
- }
+.navbar a {
+   position: relative;
+   font-size: 18px;
+   color: #d9b48f;
+   /*color:#4a7c9c ;*/
+   font-weight: 400;
+   text-decoration: none;
+   margin-left: 20px;
+}
 
- .navbar a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #4a7c9c;
-    transition: .3s;
- }
+.navbar a::before {
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background: #4a7c9c;
+   transition: .3s;
+}
 
- .navbar a:hover::before {
-    width: 100%;
- }
+.navbar a:hover::before {
+   width: 100%;
+}
 
- /*contenido*/
+/*contenido*/
 
 .main {
    margin: 140px 127px 20px 127px;
-    /*padding: 50px 50px;*/
+   /*padding: 50px 50px;*/
    width: 80vw;
    height: 80vh;
    display: grid;
-   grid-template-columns: repeat(2,1fr);
+   grid-template-columns: repeat(2, 1fr);
    scroll-margin-top: 60px;
 }
 
 
-.img{
-    padding-left: 60px;
+.img {
+   padding-left: 60px;
 }
 
- .img img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 3px solid;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, );
- }
+.img img {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   border: 3px solid;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, );
+}
 
- .contenido{
-    margin: 85px 15px 100px 80px;/* top right bottom left */
- }
+.contenido {
+   margin: 85px 15px 100px 80px;
+   /* top right bottom left */
+}
 
- .contenido h1{
-    font-size: 3em;
-    color: white;
- }
+.contenido h1 {
+   font-size: 3em;
+   color: white;
+}
 
 .contenido p {
-    margin: 5px;
-    color: white;
+   margin: 5px;
+   color: white;
 }
 
- .contenido span{
-    color: #d9bda5;
- }
+.contenido span {
+   color: #d9bda5;
+}
 
- .download-cv{
+.download-cv {
    padding: 10px 20px;
    background-color: #6DAEDB;
    border: none;
@@ -111,43 +112,44 @@ section{
    margin-top: 10px;
    cursor: pointer;
    box-shadow: 1px 3px 11px -5px rgba(109, 174, 219, 1);
- }
+}
 
- .download-cv:hover{
-   background-color:#7ea8c7;
+.download-cv:hover {
+   background-color: #7ea8c7;
    box-shadow: none;
- }
+}
 
 /*Sección de sobre mi*/
- /* .sobre_mi{
+/* .sobre_mi{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    width: 90vw;
    align-items: center;
  } */
 
- .sobre_mi .contenido{
+.sobre_mi .contenido {
    /* grid-column: 5/10; */
    padding: 2px 105px;
    display: flex;
    flex-direction: column;
-   align-items: flex-start; 
+   align-items: flex-start;
    text-align: center;
- }
+}
 
- .sobre_mi_contenido {
+.sobre_mi_contenido {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 20px;/* Espacio entre la imagen y el texto */
- }
+   gap: 20px;
+   /* Espacio entre la imagen y el texto */
+}
 
-.sobre_mi h2{
+.sobre_mi h2 {
    font-size: 2em;
    color: #fff;
 }
 
-.sobre_mi img{
+.sobre_mi img {
    height: 478px;
    width: 320px;
    padding: 10px;
@@ -160,13 +162,13 @@ section{
    max-width: 600px;
 }
 
-.divider{
+.divider {
    height: 4px;
    width: 120px;
    background-color: #d9b48f;
    margin-top: 10px 0 0 0;
    margin-bottom: 2em;
-  
+
 }
 
 /*Sección de habilidades*/
@@ -199,25 +201,26 @@ section{
    flex-wrap: wrap;
    margin-top: 50px;
 } */
- .icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* Permite que los elementos salten a la siguiente fila */
-    justify-content: center;
-    /* Centra los íconos horizontalmente */
-    gap: 20px;
-    /* Espacio entre íconos */
-    margin-top: 50px;
- }
+.icon-container {
+   display: flex;
+   flex-wrap: wrap;
+   /* Permite que los elementos salten a la siguiente fila */
+   justify-content: center;
+   /* Centra los íconos horizontalmente */
+   gap: 20px;
+   /* Espacio entre íconos */
+   margin-top: 50px;
+}
 
-.icon-item{
+.icon-item {
    flex: 0 1 20%;
    margin: 10px;
    text-align: center;
 }
 
-.icon-item img{
-   width: 80px;/* Tamaño del ícono */
+.icon-item img {
+   width: 80px;
+   /* Tamaño del ícono */
 }
 
 .icon-item p {
@@ -242,7 +245,7 @@ section{
    color: white;
 }
 
-.portafolio .cotenedor{
+.portafolio .cotenedor {
    width: 80vw;
    height: 80vh;
    margin: 0 auto;
@@ -250,14 +253,14 @@ section{
    justify-content: center;
 }
 
-.card{
-   width: 300px; 
+.card {
+   width: 300px;
    height: 420px;
    background-color: #4d7ca5;
    margin: 1em;
 }
 
-.card_img{
+.card_img {
    width: 100%;
    height: 150px;
    background-image: url(img/HR.jpg);
@@ -275,26 +278,27 @@ section{
 .card_img-Store-Stock {
    width: 100%;
    height: 150px;
-   background-image: url(/img/StoreStock.jpg );/*PONER LA IMAGEN*/
+   background-image: url(/img/StoreStock.jpg );
+   /*PONER LA IMAGEN*/
    background-size: 300px 190px;
 }
 
-.card_title{
+.card_title {
    padding: 20px;
    color: #fff;
 }
 
-.project_link{
+.project_link {
    display: flex;
    justify-content: space-evenly;
 }
 
-.project_link a{
+.project_link a {
    color: #fff;
    text-decoration: none;
 }
 
-.project_link i{
+.project_link i {
    font-size: 1.5em;
 }
 
@@ -367,11 +371,11 @@ section{
    text-align: left;
    margin-top: 4px;
    margin-bottom: 0; */
-   /*margin: -5px 0 10px ;*/
-   /* display: none; */ 
-   /* position: static; */
-      /* Cambia de posición absoluta a relativa */
-   /*top: 0;*/
+/*margin: -5px 0 10px ;*/
+/* display: none; */
+/* position: static; */
+/* Cambia de posición absoluta a relativa */
+/*top: 0;*/
 /* } */
 
 /* form .textarea .item{
@@ -409,19 +413,19 @@ form .btn-Enviar:hover{
 }
  */
 
- footer{
+footer {
    width: 100%;
    position: relative;
    bottom: 0;
    left: 0;
-   padding: 2rem ;
+   padding: 2rem;
    background-color: #2C576E;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
- }
+}
 
 footer .inicio a {
    text-decoration: none;
@@ -434,18 +438,18 @@ footer .inicio a {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 100%; 
- }
+   width: 100%;
+}
 
- .contact-icons-container{
+.contact-icons-container {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
    /* margin-bottom: 1rem; */
- }
+}
 
- .social-icons{
+.social-icons {
    height: 50px;
    width: 50px;
    display: flex;
@@ -455,130 +459,252 @@ footer .inicio a {
    text-align: center;
    border: none;
    text-decoration: none;
- }
+}
 
- footer .social-icons i {
-   font-size: 30px;/* Ajusta el tamaño a lo que necesites */
-   margin: 0;/* Espaciado entre los íconos */
-   color: #fff;/* Color de los íconos (puedes cambiarlo) */
-   transition: color 0.3s ease;/* Efecto de transición para el cambio de color */
- }
+footer .social-icons i {
+   font-size: 30px;
+   /* Ajusta el tamaño a lo que necesites */
+   margin: 0;
+   /* Espaciado entre los íconos */
+   color: #fff;
+   /* Color de los íconos (puedes cambiarlo) */
+   transition: color 0.3s ease;
+   /* Efecto de transición para el cambio de color */
+}
 
- /*MEDIA QUERY*/
- /* Dispositivos pequeños (teléfonos en modo vertical) */
- @media (max-width: 600px) {
-    .header {
-       padding: 10px 20px;
-    }
 
-    .navbar a {
-       font-size: 14px;
-       margin-left: 10px;
-    }
 
-    .main {
-       margin: 20px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
+/*MEDIA QUERY*/
+/* MEDIA QUERY para dispositivos hasta 600px */
+/*listo*/
+@media (max-width: 600px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
 
-    .img img {
-       width: 200px;
-       height: 200px;
-    }
+   body {
+      font-family: 'Lexend Deca', sans-serif;
+      background: #26425a;
+   }
 
-    .contenido h1 {
-       font-size: 1.8em;
-    }
+   .header {
+      padding: 10px 20px;
+      justify-content: right;
+      /* Centra el contenido en dispositivos pequeños */
+   }
 
-    .icon-item img {
-       width: 50px;
-    }
+   .navbar a {
+      font-size: 16px;
+      margin-left: 10px;
+      /* Menos espacio entre enlaces */
+   }
 
-    .icon-item p {
-       font-size: 14px;
-    }
+   .main {
+      margin: 0;
+      /* Elimina los márgenes */
+      width: 100vw;
+      /* Ocupa todo el ancho disponible */
+      height: 100vh;
+      /* 90vh */
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      scroll-margin-top: 60px;
+   }
 
-    .card {
-       width: 90%;
-       height: auto;
-       margin: 10px auto;
-    }
+   .img {
+      order: 2;
+      /* Mueve la imagen a la derecha */
+      padding-left: 0;
 
-    .card_img {
-       height: 120px;
-    }
- }
+   }
 
- /* Tablets en modo vertical */
- @media (max-width: 768px) {
-    .header {
-       padding: 15px 30px;
-    }
+   .img img {
+      width: 270px;
+      /* Tamaño reducido */
+      height: 270px;
+      /* Tamaño reducido */
+      margin-right: 30px;
+   }
 
-    .navbar a {
-       font-size: 16px;
-    }
+   .contenido {
+      margin: 0;
+      /* margin-top: 60px; */
+      margin-left: 20px;
 
-    .main {
-       margin: 40px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
+   }
 
-    .img img {
-       width: 250px;
-       height: 250px;
-    }
+   .contenido h1 {
+      font-size: 3em;
+      /* Ajusta el tamaño del título */
+   }
 
-    .contenido h1 {
-       font-size: 2.2em;
-    }
+   .contenido p {
+      font-size: 20px;
+      /* Texto más pequeño */
+      width: 80%;
+      height: 70%;
 
-    .icon-container {
-       justify-content: space-around;
-    }
+   }
 
-    .icon-item img {
-       width: 60px;
-    }
+   .sobre_mi,
+   .contenido {
+      padding: 0 !important;
+      justify-content: left;
+   }
 
-    .icon-item p {
-       font-size: 15px;
-    }
+   .sobre_mi img {
+      height: 600px;
+      /* Imagen más pequeña */
+      width: 200px;
+      align-items: left;
+   }
 
-    .card {
-       width: 80%;
-    }
- }
+   .sobre_mi p {
+      font-size: 20px;
+      text-align: justify;
+      width: 80%;
+      height: 80%;
+      margin-right: 40px;
+      /* Alineación para mejor legibilidad */
+   }
 
- /* Dispositivos extra pequeños (menores a 400px) */
- @media (max-width: 400px) {
-    .navbar a {
-       font-size: 12px;
-       margin-left: 8px;
-    }
+   .icon-item img {
+      width: 60px;
+      /* Reduce el tamaño de los íconos */
+      margin: 20px !important;
+   }
 
-    .img img {
-       width: 150px;
-       height: 150px;
-    }
+   .portfolio-heading,
+   .habilidades-heading {
+      margin-left: 20px;
+      /* Ajusta margen para pantallas pequeñas */
+      padding: 0;
+   }
 
-    .contenido h1 {
-       font-size: 1.5em;
-    }
+   .portafolio {
+      height: 150vh;
+   }
 
-    .icon-item img {
-       width: 40px;
-    }
+   .cotenedor {
+      margin-left: 20px !important;
+      margin-right: 10px !important;
+      display: flex;
+      /* Hace que los elementos hijos (las tarjetas) se alineen en una fila */
+      flex-wrap: wrap;
+      /* Permite que las tarjetas salten a la siguiente línea cuando no haya suficiente espacio */
+      justify-content: space-between;
+   }
 
-    .icon-item p {
-       font-size: 12px;
-    }
+   .card {
+      width: 600px;
+      /*500px Ocupa casi todo el ancho disponible */
+      height: 350px;
+      margin: 10px 0;
+      /* Centra las tarjetas */
+      /* margin-right: 20px !important;*/
+      margin-left: 9px;
+   }
 
-    .card {
-       width: 95%;
-    }
- }
+   .card_img {
+      height: 120px;
+      /* Ajusta altura */
+      background-size: 500px 150px;
+      /* Mejora escalado de la imagen */
+   }
+
+   .card_img-Cake-Byte {
+      background-size: 480px 210px;
+   }
+
+   .card_img-Store-Stock {
+      background-size: 480px 210px;
+   }
+
+   footer {
+      padding: 1rem;
+      /* Espaciado reducido */
+      width: 100%;
+      margin-top: auto;
+   }
+
+   footer .inicio h3 {
+      font-size: 16px;
+      /* Tamaño reducido */
+   }
+
+   footer .social-icons {
+      height: 40px;
+      width: 40px;
+   }
+
+   footer .social-icons i {
+      font-size: 20px;
+      /* Íconos más pequeños */
+   }
+}
+
+/* MEDIA QUERY para dispositivos hasta 400px */
+@media (max-width: 400px) {
+   .navbar a {
+      font-size: 12px;
+      margin-left: 8px;
+   }
+
+   .img img {/*foto de perfil*/
+      width: 130px ;
+      height: 150px;
+   }
+
+   .contenido h1 {
+      font-size: 2em;
+   }
+
+   .contenido p {
+      font-size: 17px;
+   }
+
+   .habilidades  {
+      height: 100vh !important;
+   }
+
+   .icon-item img {
+      width: 60px;
+   }
+
+   .icon-item p {
+      font-size: 12px;
+   }
+
+   .portafolio {
+      height: 180vh !important;
+   }
+
+   .card {
+      width: 400px;
+      /*500px Ocupa casi todo el ancho disponible */
+      height: 420px;
+      margin: 10px 0;
+      /* Centra las tarjetas */
+      /* margin-right: 20px !important;*/
+      margin-left: 9px;
+   }
+
+   .card_img {
+      height: 120px;
+      /* Ajusta altura */
+      background-size: 400px 150px;
+      /* Mejora escalado de la imagen */
+   }
+
+   .card_img-Cake-Byte {
+      background-size: 320px 210px;
+   }
+
+   .card_img-Store-Stock {
+      background-size: 320px 210px;
+   }
+}
