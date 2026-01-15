@@ -1,230 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Haja de estilos CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Kit parar iconos-->
     <script src="https://kit.fontawesome.com/bc51cbe2c5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--esto es una libreria llamada Devicon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!--Smooth scrolling JS-->
     <script src="archivos_JS/smooth_scrolling.js" defer></script>
     <!-- <script src="archivos_JS/footerSmoothScrolling.js" defer></script> -->
     <title>Mi portafolio</title>
 </head>
+
 <body>
-    <header class="header">
+    <header>
         <nav class="navbar">
-            <a href="#Up">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#Habilidades">Habilidades</a>
-            <a href="#Portafolio">Portafolio</a>
-            <a href="#Contactos">Contacto</a>
+            <p><span class="neon-purple">&lt;Yass/&gt;</span></p>
+            <div class="nav-links">
+                <a href="#Inicio">Inicio</a>
+                <a href="#Experiencia">Experiencia</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Proyectos">Proyectos</a>
+            </div>
         </nav>
     </header>
 
-    <main class="main" id="Up">
-        <div class="contenido" >
-            <h1>Hola, soy <span> Alejandro </span>Aponte</h1>
-            <p>
-                Estudiante de técnico en ingeniería de software / Apasionado por la tecnología y el desarrollo / Buscando siempre innovar.            
-            </p>
-            <a download="Hoja de vida de Alejandro" href="CV/Hoja de Vida de Alejandro .pdf" target="_blank">
-                <button class="download-cv">Descarga mi CV</button>
-            </a>
-        </div>
+    <main class="hero-section" id="Inicio">
+        <div class="container">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 col-xl-7">
+                    <p class="presentation">Hola, Soy </p>
+                    <h1 class="display-5 fw-bold mb-1">Alejandro Aponte</h1>
+                    <h4 class="display-6 fw-bold mb-3">Desarrollador de software</h4>
 
-        <div class="img">
-            <img src="./img/foto.jpg" alt="foto de mi persona">
+                    <p class="text">
+                        Desarrollador de software en formación con experiencia en aplicaciones web usando .NET, Java y
+                        tecnologías frontend, enfocado en resolver problemas reales con
+                        soluciones bien estructuradas.
+                    </p>
+                    <div class="botones d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#Experiencia" class="btn-Contact btn btn-lg">Ver Experiencia</a>
+                        <a download="Alejandro_Aponte_CV" href="CV/Alejandro_Aponte_CV.pdf" target="_blank"
+                            class="btn btn-lg btn-custom">Descargar CV</a>
+                        <a href="#Proyectos" class="btn btn-lg btn-custom">Ver Proyectos</a>
+                    </div>
+
+                    <!-- Iconos de redes sociales-->
+                    <div class="social-icons mt-5">
+                        <a href="https://github.com/24861379" target="_blank" class="mx-3 text-light"><i
+                                class="fab fa-github fa-2x" title="Mi Git Hub"></i></a>
+                        <a href="https://www.linkedin.com/in/alejandro-aponte-390b67321/" target="_blank"
+                            class="mx-3 text-light"><i class="fab fa-linkedin fa-2x" title="Mi LinkedIn"></i></a>
+                        <a href="mailto:yasmiverromero@gmail.com" target="_blank" class="mx-3 text-light"><i
+                                class="fas fa-envelope fa-2x" title="yasmiverromero@gmail.com"></i></a>
+                        <a href="https://wa.link/60ioan" target="_blank" class="social-icons mx-3 text-light">
+                            <i class="fa-brands fa-whatsapp fa-2x" title="Mi WhatsApp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <section class="sobre_mi" id="sobre-mi">
-        <div class="contenido">
-            <h2>Sobre mi</h2>
-            <div class="divider"></div>
-            <div class="sobre_mi_contenido">
-                <img src="img/StockSnap_LB.jpg" alt="imagen de codigo">
-                <p>
-                    Soy estudiante de la Fundación Universitaria Compensar. En la actualidad, estoy cursando el cuarto semestre del
-                    programa
-                    Técnico en Ingeniería de Software. Me apasiona crecer en el mundo de la tecnología, buscando siempre mejorar mis
-                    habilidades. Me considero proactivo, trabajo bien en equipo y tengo un enfoque innovador para la resolución de
-                    problemas.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="habilidades" id="Habilidades">
-        <div class="habilidades-heading">
-            <h2>Habilidades</h2>
-            <div class="divider"></div>
-
-            <p>En la actualidad se manejar los siguientes tecnologías:</p>
-
-            <div class="icon-container">
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                    <p>JAVA</p>
-                </div>
-
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                    <p>C#</p>
-                </div>
-
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                    <p>PYTHON</p>
-                </div>
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                    <p>GIT</p>
-                </div>
-                <div class="icon-item">
-                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
-                    <p>SQL SERVER</p>
-                </div>
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-                    <p>MYSQL</p>
-                </div>
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    <p>HTML</p>
-                </div>
-                <div class="icon-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                    <p>CSS</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portafolio" id="Portafolio">
-        <div class="portfolio-heading">
-            <h2>Mis proyectos</h2>
-            <div class="divider"></div>
-        </div>
-
-        <div class="cotenedor">
-            <div class="card">
-                <div class="card_img">
-                
-                </div>
-                <div class="card_title">
-                    <h2>Hoja random</h2>
-                    <p>Hoja Random es una herramienta diseñada para facilitar el aprendizaje musical de principiantes. Ayuda a los estudiantes
-                    a orientarse en su instrumento, localizar rápidamente acordes y practicar escalas de forma sencilla y efectiva.</p>
-                </div>
-                <div class="project_link">
-                    <a href="https://github.com/24861379/Hoja-Random" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://24861379.github.io/Hoja-Random/" target="_blank">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                </div>
+    <section id="Experiencia">
+        <div class="container">
+            <div class="descripcion">
+                <h1 class="section-Titles fw-bold mb-1">Experiencia Profesional</h1>
+                <p>Mi trayectoria profesional desarrollando soluciones tecnológicas.</p>
             </div>
 
-            <div class="card">
-                <div class="card_img-Cake-Byte">
-            
-                </div>
-                <div class="card_title">
-                    <h2>Cake Byte</h2>
-                    <p>
-                        Cake Byte permite a los clientes personalizar tortas para eventos, optimizando pedidos, reduciendo errores y mejorando
-                        la experiencia del usuario. También facilita la gestión de pastelerías con diseño interactivo, seguimiento de
-                        inventarios y generación de reportes.
-                    </p>
-                </div>
-                <div class="project_link">
-                    <a href="https://github.com/24861379/Cake_Byte" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
+            <div class="row experience-row">
+                <div class="col-12">
+                    <!-- Tarjeta 1 -->
+                    <div class="card card-experience">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Intern</h3>
+                                <div class="info-row-company">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <span>OlimpIA</span>
+                                </div>
 
-            <div class="card">
-                <div class="card_img-Store-Stock">
-            
-                </div>
-                <div class="card_title">
-                    <h2>Store Stock</h2>
-                    <p>
-                        Store-Stock es un gestor de inventarios que permite administrar productos con fecha de caducidad y garantías. Utiliza
-                        principios de programación orientada a objetos (POO) como herencia y encapsulamiento, facilitando el control y
-                        actualización eficiente del stock.
-                    </p>
-                </div>
-                <div class="project_link">
-                    <a href="https://github.com/24861379/Store-Stock" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>  
-    </section>
+                                <div class="info-row">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span>03/18/2025 – 09/17/2025</span>
+                                </div>
+                            </div>
 
-    <!-- <div class="contact-section">
-        <div class="contact-headings">
-            <h2>Contáctame</h2>
-            <div class="divider"></div>
-        </div>
+                            <div>
+                                <div class="experience-description">
+                                    <strong>
+                                        Contribuí al desarrollo y mantenimiento de aplicaciones web, trabajando en Back-End con C# /.NET y en Front-End con
+                                        Angular, HTML y CSS, contribuyendo a la corrección de errores y la implementación de nuevas funcionalidades.
+                                    </strong>
+                                </div>
 
-        <div class="contenedor-contacto">
-            <div class="contact-form">
-                <h4>Envíame un mensaje.</h4>
+                                <div>
+                                    <div class="info-row highlight">
+                                        <i class="fa-solid fa-award"></i>
+                                        <strong>Logros destacados:</strong>
+                                    </div>
+                                    <ul class="award-list">
+                                        <li>Mejoré la experiencia de usuario al implementar y ajustar funcionalidades tanto en el Front-end como en el Back-end.</li>
+                                        <li>Reduje el número de incidencias y issues de calidad mediante la corrección de hallazgos detectados por SonarQube.</li>
+                                        <li>Evolucioné de un rol de apoyo a un rol más autónomo, ganando la confianza de mis lideres técnicos al resolver issues de
+                                        calidad y participar en el desarrollo de servicios de back-end.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                <form class="form-control">
-                    <div class="input-group">
-                        <input type="text" placeholder="Nombre" id="nombre" autocomplete="off" class="item">
-                        <div class="error-txt">Este espacio no puede quedar vacío.</div>
-
-                        <input type="email" placeholder="Correo" id="email" autocomplete="off" class="item">
-                         <div class="error-txt">Este espacio no puede quedar vacío.</div> 
                     </div>
-                    
-                    <input type="text" placeholder="Asunto" id="asunto" autocomplete="off" class="item">
-                    <div class="error-txt">Este espacio no puede quedar vacío.</div>
-                    
-                    <div class="textarea">
-                        <textarea placeholder="Escribe tu mensaje aquí" id="mensaje" autocomplete="off" class="item"></textarea>
-                        <div class="error-txt">Este espacio no puede quedar vacío.</div>
-                    </div>
-                    <button type="submit" class="btn-Enviar">Enviar mensaje</button>
-                </form>
+                </div>
             </div>
         </div>
-    </div> -->
-    
-    <footer class="footer" id="Contactos">
-        <div class="inicio">
-            <h3>¡Contáctame!</h3>
-            <!-- <a href="#Up">
-                <i class="fa-solid fa-arrow-up" ></i><!-- id="VolverInicio" 
-                <h5>Volver al inicio</h5>
-            </a>-->
-        </div> 
+    </section>
 
-        <div class="contact-icons-container">
-            <a href="https://github.com/24861379" target="_blank" class="social-icons">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alejandro-aponte-390b67321/" target="_blank" class="social-icons">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:yasmiverromero@gmail.com" target="_blank" class="social-icons" title="yasmiverromero@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
+    <section id="Habilidades" class="section-gradient">
+        <div class="container">
+            <div class="descripcion">
+                <h1 class="section-Titles fw-bold mb-1">Habilidades</h1>
+                <p>Tecnologías y herramientas con las que trabajo para crear soluciones innovadoras.</p>
+            </div>
 
-            <a href="https://wa.link/60ioan" target="_blank" class="social-icons">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-lg-5">
+                <!-- Card 1: Frontend -->
+                <div class="col">
+                    <div class="card card-frontend h-100 bg-dark text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="frontend">
+                                <i class="fa-solid fa-code "></i>
+                            </div>
+                            <h5 class="card-title">Frontend</h5>
+                            <p class="card-text">
+                                HTML, CSS, JavaScript y Bootstrap
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Backend -->
+                <div class="col">
+                    <div class="card card-backend h-100 bg-dark text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="backend">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h5 class="card-title">Backend</h5>
+                            <p class="card-text">
+                                C#, .NET, Java y APIs REST <!-- y Python -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Bases de datos -->
+                <div class="col">
+                    <div class="card card-databases h-100 bg-dark text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="databases">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h5 class="card-title">Bases de datos</h5>
+                            <p class="card-text">
+                                SQL, SQL Server y MySQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Control de versiones -->
+                <div class="col">
+                    <div class="card card-version-control h-100 bg-dark text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="version-control">
+                                <i class="fa-solid fa-code-branch"></i>
+                            </div>
+                            <h5 class="card-title">Control de versiones</h5>
+                            <p class="card-text">
+                                Git y GitHub
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: DevOps -->
+                <div class="col">
+                    <div class="card card-devops h-100 bg-dark text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="devops">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h5 class="card-title">DevOps</h5>
+                            <p class="card-text">
+                                Azure DevOps
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <section id="Proyectos" class="section-gradient">
+        <div class="container">
+            <div class="descripcion">
+                <h1 class="section-Titles fw-bold ">Proyectos</h1>
+                <p>Una selección de mis trabajos más recientes y significativos</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-lg-5">
+                <!-- card 1 project -->
+                <div class="col">
+                    <div class="contenedor-proj card h-100  text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-img">
+                            <img src="img/HojaRandom.png" alt="imagen ilustrativa" class="img-fluid rounded-top">
+                        </div>
+
+                        <div class="description">
+                            <h4>Hoja Random</h4>
+                            <p>Hoja Random es una herramienta en desarrollo diseñada para facilitar el aprendizaje musical de
+                                principiantes. Ayuda a los estudiantes
+                                a orientarse en su instrumento, localizar rápidamente acordes y practicar escalas de
+                                forma sencilla y efectiva.</p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <spn class="tech-item">HTML</spn>
+                            <spn class="tech-item">CSS</spn>
+                            <spn class="tech-item">JavaScript</spn>
+                            <spn class="tech-item">Git</spn>
+                            <spn class="tech-item">TypeScript</spn>
+                            <spn class="tech-item">Bootstrap</spn>
+
+                        </div>
+
+                        <div class="direcciones">
+                            <a href="https://github.com/24861379/Hoja-Random" target="_blank" class="mx-3 text-light"><i
+                                    class="fab fa-github fa-2x"></i></a>
+                            <a href="https://24861379.github.io/Hoja-Random/" target="_blank" class="mx-3 text-light"><i
+                                    class="fa-solid fa-globe fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 project -->
+                <div class="col">
+                    <div class="contenedor-proj card card-devops h-100 text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-img">
+                            <img src="img/CakeByte.png" alt="imagen ilustrativa" class="img-fluid rounded-top">
+                        </div>
+
+                        <div class="description">
+                            <h4>Cake Byte</h4>
+                            <p>Cake Byte permite a los clientes personalizar tortas para eventos, optimizando pedidos,
+                                reduciendo errores y mejorando
+                                la experiencia del usuario, mientras facilita a las pastelerías la gestión del
+                                inventarios y la generación de reportes.</p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <spn class="tech-item">Java</spn>
+                            <spn class="tech-item">Java Swing</spn>
+                            <spn class="tech-item">MySQL</spn>
+                            <spn class="tech-item">Git</spn>
+                            <spn class="tech-item">Xampp</spn>
+
+                        </div>
+
+                        <div class="direcciones">
+                            <a href="https://github.com/24861379/Cake_Byte" target="_blank" class="mx-3 text-light"><i
+                                    class="fab fa-github fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 project -->
+                <div class="col">
+                    <div class="contenedor-proj card card-devops h-100 text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-img">
+                            <img src="img/StoreStock.jpg" alt="imagen ilustrativa" class="img-fluid rounded-top">
+                        </div>
+
+                        <div class="description">
+                            <h4>Store Stock</h4>
+                            <p>Store-Stock es un gestor de inventarios que permite administrar productos con fecha de
+                                caducidad y garantías. Utiliza
+                                principios de programación orientada a objetos (POO) como herencia y encapsulamiento,
+                                facilitando el control y
+                                actualización eficiente del stock.</p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <spn class="tech-item">Java</spn>
+                            <spn class="tech-item">Git</spn>
+                        </div>
+
+                        <div class="direcciones">
+                            <a href="https://github.com/24861379/Store-Stock" target="_blank" class="mx-3 text-light"><i
+                                    class="fab fa-github fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 project -->
+                <div class="col">
+                    <div class="contenedor-proj card card-devops h-100 text-light border-0 rounded-4 shadow-sm">
+                        <div class="card-img">
+                            <img src="img/RegistroAsistencia.png" alt="imagen ilustrativa"
+                                class="img-fluid rounded-top">
+                        </div>
+
+                        <div class="description">
+                            <h4>Registro de asistencia</h4>
+                            <p>Registro de Asistencia es un sistema en desarrollo creado para digitalizar un proceso real que antes se realizaba de
+                            forma manual, facilitando la gestión de eventos y el control de asistencia. Permite crear y desactivar eventos,
+                            registrar personas, marcar su asistencia, administrar roles y generar reportes de los participantes.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <spn class="tech-item">C#</spn>
+                            <spn class="tech-item">.NET 9</spn>
+                            <spn class="tech-item">Entity Framework Core</spn>
+                            <spn class="tech-item">LINQ</spn>
+                            <spn class="tech-item">REST API</spn>
+                            <spn class="tech-item">JWT</spn>
+                            <spn class="tech-item">Git</spn>
+                            <spn class="tech-item">SQL server</spn>
+                            <spn class="tech-item">.NET MAUI</spn>
+                        </div>
+
+                        <div class="direcciones">
+                            <a href="https://github.com/24861379/Sistema-de-Registro-de-asistencia" target="_blank"
+                                class="mx-3 text-light"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
