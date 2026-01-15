@@ -1,0 +1,20 @@
+Frontend: from-indigo-500 to-blue-500
+
+#6366f1 → #3b82f6
+Backend: from-purple-500 to-pink-500
+
+#a855f7 → #ec4899
+Base de Datos: from-cyan-500 to-teal-500
+
+#06b6d4 → #14b8a6
+Diseño UI/UX: from-orange-500 to-red-500
+
+#f97316 → #ef4444
+Mobile: from-green-500 to-emerald-500
+
+#22c55e → #10b981
+DevOps: from-violet-500 to-purple-500
+
+#8b5cf6 → #a855f7
+
+#0f172a, #020617
