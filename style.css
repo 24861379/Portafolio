@@ -45,8 +45,8 @@ section {
    left: 0;
    width: 100%;
    padding: 20px 50px 10px 50px;
-   display: flex;
-   justify-content: space-between;/* flex-end */
+   /* display: flex; */
+   /* justify-content: space-between; *//* flex-end */
    align-items: center;
    z-index: 100;
    color: var(--color-text-light);
@@ -84,6 +84,21 @@ section {
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    font-size: 20px;
+}
+
+.navbar-toggler{
+   border :none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+   outline: none;
+   box-shadow: none;
+}
+
+.navbar-toggler-icon {
+   filter: invert(1);/* blanco */
 }
 
 /* =======================
@@ -273,7 +288,6 @@ background: linear-gradient(to right, #6366f1, #8b5cf6);
 
 .col .contenedor-proj{
    background: #192642;
-   /* height: ; */
 }
 
 .description, .tech-stack {
@@ -329,10 +343,6 @@ background: linear-gradient(to right, #6366f1, #8b5cf6);
 CARD EXPERIENCE 
 =======================
 */
-/* .experience-row{
-   display: flex;
-   justify-content: center;
-} */
 
 .card-experience {
    background: #192642;
