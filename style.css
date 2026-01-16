@@ -26,6 +26,7 @@
 
 body {
    font-family: 'Lexend Deca', sans-serif;
+   scroll-snap-type: y mandatory;
 }
 
 section {
@@ -33,6 +34,11 @@ section {
    background: #020617;
    padding-top: 60px;
    padding-bottom: 80px;
+}
+
+section,
+main {
+   scroll-snap-align: start;
 }
 
 /* =======================
@@ -392,5 +398,163 @@ CARD EXPERIENCE
 .award-list li{
    color: #94a3b8;
    margin-bottom: 10px;
+}
+
+@media (min-width: 1400px) {
+   .container {
+      max-width: 1320px;
+   }
+   /* 
+   =======================
+   NAVBAR
+   =======================
+   */
+   .navbar {
+      padding: 28px 80px 18px 80px;
+   }
+   
+   .nav-links a {
+      font-size: 1.70rem;
+   }
+   
+   .neon-purple {
+      font-size: 1.70rem;
+   }
+
+   /* 
+   =======================
+   MAIN
+   =======================
+   */
+
+   main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+   }
+
+   main h1 {
+      font-size: 3.2rem;
+   }
+
+   main h4 {
+      font-size: 2rem;
+   }
+
+   .text {
+      font-size: 1.50rem;
+      max-width: 820px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+   }
+
+   .botones a{
+      font-size: 1.30rem;
+   }
+
+   .btn-Contact,
+   .btn-custom{
+      height: 60px;
+   }
+
+   .social-icons{
+      font-size: 1.70rem;
+   }
+
+   /* 
+   =======================
+   Experiencia
+   =======================
+   */
+   .descripcion h1 {
+      font-size: 70px;
+   }
+
+   .descripcion p{
+      font-size: 1.70rem;
+   }
+
+   .card-experience{
+      width: 100%;
+   }
+
+   .info-row-company,
+   .info-row{
+      font-size: 1.74rem;
+   }
+
+   .card-title h3 {
+      font-size: 2.50rem;
+   }
+
+   .experience-description{
+      font-size: 1.60rem;
+   }
+
+   .highlight{
+      font-size: 1.60rem;
+   }
+
+   .award-list li{
+      font-size: 1.60rem;
+   }
+
+   /* 
+   =======================
+   Habilidaes
+   =======================
+   */
+   .descripcion h1 {
+      font-size: 70px;
+   }
+
+   .descripcion p {
+      font-size: 1.70rem;
+   }
+
+   .card-title {
+      font-size: 2.50rem;
+   }
+
+   .card-text  {
+      font-size: 1.80rem;
+   }
+
+   .frontend, 
+   .backend, 
+   .databases,
+   .version-control, 
+   .devops {
+      width: 80px;
+      height: 80px;
+   }
+
+   /* 
+   =======================
+   PROYECTOS
+   =======================
+   */
+   .description h4{
+      font-size: 40px;
+   }
+
+   .description p {
+      font-size: 30px;
+   }
+
+   .card-img img {
+      width: 100%;
+      height: 250px;
+   }
+
+   .tech-item{
+      font-size: 27px;
+      height: 42px;
+   }
+
+   .direcciones{
+      font-size: 1.70rem;
+      margin: 16px 10px 20px 10px;
+   }
 }
 
